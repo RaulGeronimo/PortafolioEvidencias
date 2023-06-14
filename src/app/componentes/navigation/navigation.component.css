@@ -1,0 +1,105 @@
+/* section {
+  background-size: cover;
+  background-position: center center;
+  height: 50px;
+}
+
+.titulo:hover {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.contenido header {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
+.contenido header .contenido-header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.contenido header .contenido-header h1 {
+  text-align: center;
+  color: #509cff;
+}
+
+.contenido header .contenido-header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.contenido header .contenido-header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 12px;
+  font-weight: 400;
+  transition: .5s;
+}
+
+.contenido header .contenido-header nav ul li a:hover {
+  color: #509cff;
+}
+
+.contenido header .contenido-header .redes a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+  transition: .5s;
+}
+
+.contenido header .contenido-header .redes a:hover {
+  color: #509cff;
+}
+
+.contenido header .contenido-header seleccionado {
+  color: #509cff;
+}
+
+#icono-nav {
+  color: #fff;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .redes {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.responsive {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  nav.responsive ul {
+    display: block !important;
+    text-align: center;
+  }
+
+  nav.responsive ul li {
+    margin: 5px 0;
+  }
+
+  #icono-nav {
+    display: block;
+  }
+}
+ */

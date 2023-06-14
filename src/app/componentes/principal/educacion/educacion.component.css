@@ -1,0 +1,84 @@
+/* .educacion {
+  padding: 100px 15px;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.educacion .titulo-seccion {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+
+.educacion .fila {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1150px;
+  margin: 30px auto;
+}
+
+.educacion .fila .servicio {
+  max-width: 350px;
+  background-color: #fff;
+  padding: 30px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.educacion .fila .servicio:hover {
+  box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+.educacion .fila .servicio .icono {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.educacion .fila .servicio h4 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.educacion .fila .servicio hr {
+  width: 30%;
+  margin: auto;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.educacion .fila .servicio ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.educacion .fila .servicio p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 800px) {
+  .educacion {
+    padding: 50px 15px;
+  }
+
+  .educacion .fila {
+    display: block;
+  }
+
+  .educacion .fila .servicio {
+    margin: 10px auto;
+  }
+}
+ */

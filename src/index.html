@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portafolio</title>
+  <base href="/">
+  <meta http-equiv="content-language" content="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <app-root></app-root>
+
+  <div class="go-top-container">
+    <div class="go-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+  </div>
+
+</body>
+
+<!-- Script -->
+<script src="https://kit.fontawesome.com/b8aae55bcb.js" crossorigin="anonymous"></script>
+<!-- Barra Skills -->
+<script>
+  //Función que me aplica el estilo a la opciòn seleccionada y quita la previamente seleccionada
+  function seleccionar(link) {
+    var opciones = document.querySelectorAll('#links  a');
+    opciones[0].className = "";
+    opciones[1].className = "";
+    opciones[2].className = "";
+    opciones[3].className = "";
+    opciones[4].className = "";
+    opciones[5].className = "";
+    link.className = "seleccionado";
+
+    //Hacemos desaparecer el menu una vez que se ha seleccionado una opcion
+    //en modo responsive
+    var x = document.getElementById("nav");
+    x.className = "";
+  }
+
+  //función que muestra el menu responsive
+  function responsiveMenu() {
+    var x = document.getElementById("nav");
+    if (x.className === "") {
+      x.className = "responsive";
+    } else {
+      x.className = "";
+    }
+  }
+
+  //detecto el scrolling para aplicar la animación del la barra de habilidades
+  window.onscroll = function () {
+    /* console.log(document.documentElement.scrollTop) */
+    try {
+      efectoHabilidades()
+    } catch (error) {
+      
+    }
+    if (document.documentElement.scrollTop > 100) {
+      document.querySelector(".go-top-container").classList.add('show')
+    } else {
+      document.querySelector(".go-top-container").classList.remove('show')
+    }
+  }
+
+  document.querySelector('.go-top-container').addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  })
+
+  //funcion que aplica la animación de la barra de habilidades
+  function efectoHabilidades() {
+    var skills = document.getElementById("skills");
+    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+    if (distancia_skills >= 300) {
+      document.getElementById("MySQL").classList.add("barra-progreso1");
+      document.getElementById("SQL").classList.add("barra-progreso2");
+      document.getElementById("NoSQL").classList.add("barra-progreso3");
+      document.getElementById("Oracle").classList.add("barra-progreso4");
+    }
+  }
+
+</script>
+
+</html>
